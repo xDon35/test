@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link href="css/style4.css" rel="stylesheet">
+<body>
+<!-- Navigation -->
+<header> 
+  <nav id="topbar">
+    <ul>
+        <li><a href="http://localhost:3000/">HOME</a></li>
+       <li><a href="game">Today's Games</a></li>
+       <li><a href="props">Props and Predictions</a></li>
+       <li><a href="playerstats">Player Stats</a></li>
+    </ul>
+  </nav>
+  <style>
+    header{
+    width: 100%;
+    min-height: 100px;
+    background-image: url('logo.png');
+    background-color: rgb(2, 2, 2);
+    background-repeat: none;
+    background-size:cover;
+    display: inline-block;
+}
+
+nav{
+background-repeat: no-repeat;
+background-image: url('logo.png');
+background-size: 60px;
+padding-top: 10px;
+}
+
+header div a{
+text-decoration: none;
+border: 1px solid black;
+border-radius: 1px;
+background-color: rgb(0, 0, 166);
+color: white;
+padding: 10px 20px;
+}
+
+header nav ul li a {
+color: #ffffff;
+text-decoration: none;
+margin-left:100px ;
+font-size: bold;
+font-weight: bold;
+}
+
+header nav ul li a:hover{
+color:#c1bfbf;
+}
+header nav ul{
+list-style-type: none;
+
+}
+
+header nav ul li{
+margin-top: 30px;
+display:inline-block;
+
+}
+
+  </style>
+</header>
+<div class="container">
+    <div class="player-card">
+      <img src="/public/images/lebron-300x200.jpg" alt="LeBron James">
+      <div class="betting-options">
+        <h3>LeBron James Points</h3>
+        <label for="lebron-ppg-bet">PPG:</label>
+        <input type="number" id="lebron-ppg-bet" name="lebron-ppg-bet" min="0" step="0.5">
+        <select id="lebron-ppg-bet-option" name="lebron-ppg-bet-option">
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+        <button class="place-bet-button">Place Bet</button>
+      </div>
+    </div>
+    
+    <div class="player-card">
+        <img src="/public/images/USATSI_20120728_168398863_lowres-300x200.jpg" alt="Kevin Durant">
+        <div class="betting-options">
+          <h3>Kevin Durant Points</h3>
+          <label for="durant-ppg-bet">PPG:</label>
+          <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+          <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/befc804d374df5c74a1481e95da85bf6.webp" alt="Jayson Tatum">
+    <div class="betting-options">
+      <h3>Jayson Tatum Points</h3>
+      <label for="tatum-ppg-bet">PPG:</label>
+      <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+      <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/4612.png" alt="Stephen Curry">
+    <div class="betting-options">
+      <h3>Stephen Curry Points</h3>
+      <label for="curry-ppg-bet">PPG:</label>
+      <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+      <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/Anthony-Davis-300x200.webp" alt="Kevin Durant">
+    <div class="betting-options">
+      <h3>Anthony Davis Points</h3>
+      <label for="davis-ppg-bet">PPG:</label>
+      <input type="number" id="davis-ppg-bet" name="davis-ppg-bet" min="0" step="0.5">
+      <select id="davis-ppg-bet-option" name="davis-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/embidd.jpg" alt="Joel Embiid">
+    <div class="betting-options">
+      <h3>Joel Embiid PPG</h3>
+      <label for="embiid-ppg-bet">PPG:</label>
+      <input type="number" id="embiid-ppg-bet" name="embiid-ppg-bet" min="0" step="0.5">
+      <select id="embiid-ppg-bet-option" name="embiid-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/PIC2-Jimmy-300x200.jpg" alt="Stephen Curry">
+    <div class="betting-options">
+      <h3>Jimmy Butler PPG</h3>
+      <label for="curry-ppg-bet">PPG:</label>
+      <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+      <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/jokic.png" alt="Kevin Durant">
+    <div class="betting-options">
+      <h3>Nikolai Jokic PPG</h3>
+      <label for="durant-ppg-bet">PPG:</label>
+      <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+      <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="/public/images/Jaylen-Brown-Scoring-Record-300x200.jpg" alt="Jayson Tatum">
+    <div class="betting-options">
+      <h3>Jaylen Browns Points</h3>
+      <label for="tatum-ppg-bet">PPG:</label>
+      <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+      <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div>
+  
+  <div class="player-card">
+    <img src="/public/images/Jalen-Brunson-200x300.jpg" alt="Stephen Curry">
+    <div class="betting-options">
+      <h3>Jalen Brunson Points</h3>
+      <label for="curry-ppg-bet">PPG:</label>
+      <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+      <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+        <option value="over">Over</option>
+        <option value="under">Under</option>
+      </select>
+      <button class="place-bet-button">Place Bet</button>
+    </div>
+  </div> 
+
+  <div class="container">
+    <div class="player-card">
+      <img src="/public/images/lebron-300x200.jpg" alt="LeBron James">
+      <div class="betting-options">
+        <h3>LeBron James Rebounds</h3>
+        <label for="lebron-ppg-bet">REB:</label>
+        <input type="number" id="lebron-ppg-bet" name="lebron-ppg-bet" min="0" step="0.5">
+        <select id="lebron-ppg-bet-option" name="lebron-ppg-bet-option">
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+        <button class="place-bet-button">Place Bet</button>
+      </div>
+    </div>
+  
+    <div class="player-card">
+      <img src="/public/images/USATSI_20120728_168398863_lowres-300x200.jpg" alt="Kevin Durant">
+      <div class="betting-options">
+        <h3>Kevin Durant Rebounds</h3>
+        <label for="durant-ppg-bet">REB:</label>
+        <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+        <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+        <button class="place-bet-button">Place Bet</button>
+      </div>
+    </div>
+  
+    <div class="player-card">
+      <img src="/public/images/befc804d374df5c74a1481e95da85bf6.webp" alt="Jayson Tatum">
+      <div class="betting-options">
+        <h3>Jayson Tatum Rebounds</h3>
+        <label for="tatum-ppg-bet">REB:</label>
+        <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+        <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+        <button class="place-bet-button">Place Bet</button>
+      </div>
+    </div>
+  
+    <div class="player-card">
+      <img src="/public/images/4612.png" alt="Stephen Curry">
+      <div class="betting-options">
+        <h3>Stephen Curry Rebounds</h3>
+        <label for="curry-ppg-bet">REB:</label>
+        <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+        <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+          <option value="over">Over</option>
+          <option value="under">Under</option>
+        </select>
+        <button class="place-bet-button">Place Bet</button>
+      </div>
+    </div>
+
+    <div class="player-card">
+        <img src="/public/images/Anthony-Davis-300x200.webp" alt="Kevin Durant">
+        <div class="betting-options">
+          <h3>Anthony Davis Rebounds</h3>
+          <label for="durant-ppg-bet">REB:</label>
+          <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+          <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+      </div>
+
+      <div class="player-card">
+        <img src="/public/images/embidd.jpg" alt="Jayson Tatum">
+        <div class="betting-options">
+          <h3>Joel Embiid Rebounds</h3>
+          <label for="tatum-ppg-bet">REB:</label>
+          <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+          <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+      </div>
+
+      <div class="player-card">
+        <img src="/public/images/PIC2-Jimmy-300x200.jpg" alt="Stephen Curry">
+        <div class="betting-options">
+          <h3>Jimmy Butler Rebounds</h3>
+          <label for="curry-ppg-bet">REB:</label>
+          <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+          <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+      </div>
+
+      <div class="player-card">
+        <img src="/public/images/jokic.png" alt="Kevin Durant">
+        <div class="betting-options">
+          <h3>Nikolai Jokic Rebounds</h3>
+          <label for="durant-ppg-bet">REB:</label>
+          <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+          <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+      </div>
+      <div class="player-card">
+        <img src="/public/images/Jaylen-Brown-Scoring-Record-300x200.jpg" alt="Jayson Tatum">
+        <div class="betting-options">
+          <h3>Jaylen Browns Rebounds</h3>
+          <label for="tatum-ppg-bet">REB:</label>
+          <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+          <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+      </div>
+      <div class="player-card">
+        <img src="/public/images/Jalen-Brunson-200x300.jpg" alt="Stephen Curry">
+        <div class="betting-options">
+          <h3>Jalen Brunson Rebounds</h3>
+          <label for="curry-ppg-bet">REB:</label>
+          <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+          <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+            <option value="over">Over</option>
+            <option value="under">Under</option>
+          </select>
+          <button class="place-bet-button">Place Bet</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="player-card">
+          <img src="/public/images/lebron-300x200.jpg" alt="LeBron James">
+          <div class="betting-options">
+            <h3>LeBron James Assists</h3>
+            <label for="lebron-ppg-bet">AST:</label>
+            <input type="number" id="lebron-ppg-bet" name="lebron-ppg-bet" min="0" step="0.5">
+            <select id="lebron-ppg-bet-option" name="lebron-ppg-bet-option">
+              <option value="over">Over</option>
+              <option value="under">Under</option>
+            </select>
+            <button class="place-bet-button">Place Bet</button>
+          </div>
+        </div>
+
+        <div class="player-card">
+            <img src="/public/images/USATSI_20120728_168398863_lowres-300x200.jpg" alt="Kevin Durant">
+            <div class="betting-options">
+              <h3>Kevin Durant Assists</h3>
+              <label for="durant-ppg-bet">AST:</label>
+              <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+              <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+                <option value="over">Over</option>
+                <option value="under">Under</option>
+              </select>
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+          
+          <div class="player-card">
+            <img src="/public/images/befc804d374df5c74a1481e95da85bf6.webp" alt="Jayson Tatum">
+            <div class="betting-options">
+              <h3>Jayson Tatum Assists</h3>
+              <label for="tatum-ppg-bet">AST:</label>
+              <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+              <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+                <option value="over">Over</option>
+                <option value="under">Under</option>
+              </select>
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+          
+          <div class="player-card">
+            <img src="/public/images/4612.png" alt="Stephen Curry">
+            <div class="betting-options">
+              <h3>Stephen Curry Assists</h3>
+              <label for="curry-ppg-bet">AST:</label>
+              <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+              <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+                <option value="over">Over</option>
+                <option value="under">Under</option>
+              </select>
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+
+          <div class="player-card">
+            <img src="/public/images/Anthony-Davis-300x200.webp" alt="Kevin Durant">
+            <div class="betting-options">
+              <h3>Anthony Davis Assists</h3>
+              <label for="durant-ppg-bet">AST:</label>
+              <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+              <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+                <option value="over">Over</option>
+                <option value="under">Under</option>
+              </select>
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+
+          <div class="player-card">
+            <img src="/public/images/embidd.jpg" alt="Jayson Tatum">
+            <div class="betting-options">
+              <h3>Joel Embiid Assists</h3>
+              <label for="tatum-ppg-bet">AST:</label>
+              <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+              <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+                <option value="over">Over</option>
+                <option value="under">Under</option>
+              </select>
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+
+          <div class="player-card">
+            <img src="/public/images/PIC2-Jimmy-300x200.jpg" alt="Stephen Curry">
+            <div class="betting-options">
+              <h3>Jimmy Butler Assists</h3>
+              <label for="curry-ppg-bet">AST:</label>
+              <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+              <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+                <option value="over">Over</option>
+                <option value="under">Under</option>
+              </select>
+              <button class="place-bet-button">Place Bet</button>
+            </div>
+          </div>
+  
+          div class="player-card">
+                <img src="/public/images/jokic.png" alt="Kevin Durant">
+                <div class="betting-options">
+                  <h3>Nikolai Jokic Assists</h3>
+                  <label for="durant-ppg-bet">AST:</label>
+                  <input type="number" id="durant-ppg-bet" name="durant-ppg-bet" min="0" step="0.5">
+                  <select id="durant-ppg-bet-option" name="durant-ppg-bet-option">
+                    <option value="over">Over</option>
+                    <option value="under">Under</option>
+                  </select>
+                  <button class="place-bet-button">Place Bet</button>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <img src="/public/images/Jaylen-Brown-Scoring-Record-300x200.jpg" alt="Jayson Tatum">
+                <div class="betting-options">
+                  <h3>Jaylen Browns Assists</h3>
+                  <label for="tatum-ppg-bet">AST:</label>
+                  <input type="number" id="tatum-ppg-bet" name="tatum-ppg-bet" min="0" step="0.5">
+                  <select id="tatum-ppg-bet-option" name="tatum-ppg-bet-option">
+                    <option value="over">Over</option>
+                    <option value="under">Under</option>
+                  </select>
+                  <button class="place-bet-button">Place Bet</button>
+                </div>
+              </div>
+              
+              <div class="player-card">
+                <img src="/public/images/Jalen-Brunson-200x300.jpg" alt="Stephen Curry">
+                <div class="betting-options">
+                  <h3>Jalen Brunson Assists</h3>
+                  <label for="curry-ppg-bet">AST:</label>
+                  <input type="number" id="curry-ppg-bet" name="curry-ppg-bet" min="0" step="0.5">
+                  <select id="curry-ppg-bet-option" name="curry-ppg-bet-option">
+                    <option value="over">Over</option>
+                    <option value="under">Under</option>
+                  </select>
+                  <button class="place-bet-button">Place Bet</button>
+                </div>
+              </div>
+    
